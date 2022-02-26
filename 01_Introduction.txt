@@ -1,0 +1,36 @@
+What is git?
+=> Git is a free and open source distrubuted version control system designed to handle everyghing
+from small to very large projects with speed and efficency.
+
+->git status = to get the status about the repository
+->git --version = to get the infomation about the version of the git
+->git init = to initialize current repository as the git repository
+first:
+->git add . = by doing this all the file will go to the stage area or will going to be stage
+		(in this process all the file will go form working directory to the stage)
+second:
+->clear = to clear screen of gitbash
+->git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
+->git commit --ammend = to commit in the same commited file done previously 
+-> git remote add origin <url> (to add to remote)
+-> $ git remote set-url origin <url> (to change the url)
+->git log = it is use to get the status after commit the file
+		'q' or 'z' to exit git log
+->git log -5 = only to see the status of <number=5> commit
+->git show = will show the commit changes
+->git config --global user.name "Roman Ojha" = this will set the name of the use for that repository
+->git config --global user.name = to get the name of user
+->git config --global user.email "razzroman98@gmail.com" = This will set the email address for the user
+->git config --global user.email = to get the email address of the user
+||NOTE:: by using --global this username name emali will be applied to all the repository of the pc
+
+How to Write Commit Massages?
+=> commit massages is the massage that you will set for the version that you are trying to commit
+	in the repository and which show the changes that you did in that version
+	You have to explain the thing that you did and that you change in you version of that repository
+	which will help other to understand that version which you have make
+
+What is Three layer architecture ?
+	1) Working area : working area are the area where you work for you version of that repository
+	2) staging area : when you finished working on your version the after that you can put it into the stagin afea of the repository
+	3) Commit area : Now if you want to store that version them you will commit that version from the staging area

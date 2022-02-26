@@ -1,0 +1,12 @@
+=> Push and Pull Code from git
+	-> git remote add origin git@github.com:RomanOjha-git/Git-Tutorials.git = this will make to put repository in the link
+	->git push -u origin main = to push the repositor to the link
+	-> git push origin <current_branch_name> (to push in current branch in remote)
+	->git push origin master
+	->git push -u origin master
+	-> git pull (to pull the new commit happen in remote repository and merge in you local repository)
+	->git pull origin main = this will pull in local repo to all the changes that had happen in the remote repository 
+			-> git Pull is used to fetch and merge changes from the remote repository to the local repository
+			-> git Pull is a combination of two commands, git fetch followed by git mearge
+			-> git fetch (git fetch command downloads content from the required remote repository)
+			-> git merge (git merge command combines multiple sequence of commits into a single branch)

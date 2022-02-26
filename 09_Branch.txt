@@ -1,0 +1,31 @@
+=> Branches in Git :
+	https://youtu.be/7xhkEQS3dXw?t=170
+	-> Long Running Branch on github
+		1. Master/main
+		2. develop (for developement purpose and for testing)
+		3. release (https://www.youtube.com/watch?v=rX80eKPdA28)
+		4. propose update(pu)
+		5. prod
+	-> Topic Branchs:
+		1.
+
+	-> git branch = to see the branch of the repo
+	-> git branch <branch_Name> (git branch -b <branch_Name>) = to make the new branch of the repo
+	-> git branch -M main
+	-> git branch -r (to find name of remote branch)
+	-> git checkout <remote_branch_name> (to switch to the remote branch)
+	-> git checkout <Branch_Name> = to switch to the another branch of the repo
+		-> Note: while switching file will also switch means, all the file from that branch will replace the another branch
+	-> git checkout -b <branch_name> (to create new branch)
+	-> git merge <another_branch_name> = this will merge the another branch and make one
+	-> git push origin --delete <branch_Name> = to delete the branch from the remote(github)
+
+	-> git branch -d <branch_Name> = to delete the branch from the local system
+	-> git push origin --delete <remote_branch_name>
+	-> git branch -D <branch_Name> = hard delete
+
+*) Rename Branch to local & remote
+	-> git checkout <old_name>
+	-> git checkout <new_name>
+	-> git push origin -u <new_name>
+	-> git push origin --delete <old_name>

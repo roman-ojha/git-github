@@ -1,0 +1,27 @@
+=> Ignoring Files in Git by adding .gitignore file 
+	-> touch .gitignore = to make blank .gitignore file
+	-> notepad .gitignore = to open file in notepad
+	-> git rm --cached <FILENAME> = to not track the file that we use to track bafore and after we add it to the .gitignore
+	-> Inside the .gitignore :
+		EX: Index.txt
+		    *.pyc
+		    *.sql
+	-> https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+	-> Book link: https://git-scm.com/book/en/v2
+
+
+=> NOTE: we can't git ignore different file in different branch because if we will merge those two branch it will again get all the ingore file into the merged branch
+
+
+
+*) Slugignore: (https://devcenter.heroku.com/articles/slug-compiler#ignoring-files-with-slugignore)
+	-> If your repository contains files not necessary to run your app, you may wish to add these to a .slugignore file in the root of your repository. Examples of files you may wish to exclude from the slug:
+	-> The format is roughly the same as .gitignore. Here’s an example .slugignore:
+		# Heres a comment
+		*.psd
+		*.pdf
+		/test
+		/spec
+	-> The .slugignore file causes files to be removed after you push code to Heroku and before the buildpack runs. This lets you prevent large files from being included in the final slug. Unlike .gitignore, .slugignore does not support negated ! patterns.
+
+	You can further reduce the number of unnecessary files (for example, log and tmp directories) by ensuring that they aren’t tracked by git, in which case they won’t be deployed to Heroku either.

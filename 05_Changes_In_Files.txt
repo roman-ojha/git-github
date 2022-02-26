@@ -1,0 +1,15 @@
+=> Scanning Changes To Files using git diff commend
+	-> git diff Tutorial.txt = this will show that what kind of thing we had changed in this file
+	-> git diff --staged Tutorial.txt = to see the staged change after push as well
+	-> git reset = this will reset the file from the stage and make unstage and remove form there
+	-> git reset --hard HEAD^ = to undo the latest commit and code change will note show
+	-> git reset --soft <commit_id> = to undo the latest commit and code change will be able to see
+	-> git restore --stage <file_name>= it will resotre the previous code and remove from the stage area
+	-> git resotre <file_name>= it will restore the the previous code after the stage remove from the stage area
+	-> git checkout filename.txt= this will put the file to the privious state 
+	-> git checkout . = this will put all the file to the previous state
+	-> ls -la = to see all file on that repo
+	-> git revert {commit_id} -> to revert to the previous state from that commit
+	-> git reset --hard Head^ will remove the last commit from the git
+	-> git push origin +<branch_name> --force => to delete the recent remote push in github after reset the commit from the previous command
+		NOTE: while reset all the previous work that you have done will also remove so while doing these thing be aware of that

@@ -1,0 +1,5 @@
+=> 4 Way to stage the repo
+     	1) git add -A = Stages All
+     	2) git add .  = Stages new all modified, without deleted
+     	3) git add -u = Stage modified and deleted, without new
+     	4) git add <file_Name> = Stage the file
