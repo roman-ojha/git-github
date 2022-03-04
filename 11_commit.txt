@@ -1,0 +1,2 @@
+->git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
+->git commit --amend -m <commit_message> = to change previous commit message
