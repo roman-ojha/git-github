@@ -6,20 +6,11 @@ from small to very large projects with speed and efficency.
 ->git --version = to get the infomation about the version of the git
 ->git init = to initialize current repository as the git repository
 first:
-->git add . = by doing this all the file will go to the stage area or will going to be stage
-		(in this process all the file will go form working directory to the stage)
 -> git update-git-for-windows (to upgrade git version for windows)
 
 
 second:
 ->clear = to clear screen of gitbash
-->git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
-->git commit --ammend = to commit in the same commited file done previously 
--> git remote add origin <url> (to add to remote)
--> $ git remote set-url origin <url> (to change the url)
-->git log = it is use to get the status after commit the file
-		'q' or 'z' to exit git log
-->git log -5 = only to see the status of <number=5> commit
 ->git show = will show the commit changes
 
 How to Write Commit Massages?

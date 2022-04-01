@@ -6,13 +6,11 @@
 		3. release (https://www.youtube.com/watch?v=rX80eKPdA28)
 		4. propose update(pu)
 		5. prod
-	-> Topic Branchs:
-		1.
-
 	-> git branch = to see the branch of the repo
 	-> git branch <branch_Name> (git branch -b <branch_Name>) = to make the new branch of the repo
-	-> git branch -M main
+	-> git branch -M main 
 	-> git branch -r (to find name of remote branch)
+	-> git branch - (to go to previously working branch)
 	-> git checkout <remote_branch_name> (to switch to the remote branch)
 	-> git checkout <Branch_Name> = to switch to the another branch of the repo
 		-> Note: while switching file will also switch means, all the file from that branch will replace the another branch
