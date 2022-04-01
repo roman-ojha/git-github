@@ -8,6 +8,9 @@ from small to very large projects with speed and efficency.
 first:
 ->git add . = by doing this all the file will go to the stage area or will going to be stage
 		(in this process all the file will go form working directory to the stage)
+-> git update-git-for-windows (to upgrade git version for windows)
+
+
 second:
 ->clear = to clear screen of gitbash
 ->git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
@@ -18,11 +21,6 @@ second:
 		'q' or 'z' to exit git log
 ->git log -5 = only to see the status of <number=5> commit
 ->git show = will show the commit changes
-->git config --global user.name "Roman Ojha" = this will set the name of the use for that repository
-->git config --global user.name = to get the name of user
-->git config --global user.email "razzroman98@gmail.com" = This will set the email address for the user
-->git config --global user.email = to get the email address of the user
-||NOTE:: by using --global this username name emali will be applied to all the repository of the pc
 
 How to Write Commit Massages?
 => commit massages is the massage that you will set for the version that you are trying to commit

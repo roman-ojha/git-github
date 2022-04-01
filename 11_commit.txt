@@ -1,2 +1,17 @@
-->git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
-->git commit --amend -m <commit_message> = to change previous commit message
+-> git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
+-> git commit --amend -m <commit_message> = to change previous commit message
+-> git commit -am <commit_message> = this will automatically stage(add .) and commit the message
+
+*) Custom Command to commit:
+    -> git config --global alias.ac "commit -am"
+            -> here we are create command 'ac' which will run command 'commit -am'
+            -> git ac <commit_message>
+                -> now this command will stage(add) and commit message
+
+*) update the last commit with new files:
+    -> git add .
+    -> git commit --amend <commit_message> (to update the last commit by adding new files)
+    -> git commit --amend --no-edit (if you don't want to change the commit message)
+    
+    -> NOTE: this will only work if you had not push commit on you remote repository unless:
+        -> git push origin master --force (if you want to overwrite the remote commit with the state of you local code BUT not recommended that much)

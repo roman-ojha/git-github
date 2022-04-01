@@ -1,0 +1,12 @@
+->git config --global user.name "Roman Ojha" = this will set the name of the use for that repository
+->git config --global user.name = to get the name of user
+->git config --global user.email "razzroman98@gmail.com" = This will set the email address for the user
+->git config --global user.email = to get the email address of the user
+||NOTE:: by using --global this username name emali will be applied to all the repository of the pc
+
+*) Create aliases/ shorten existing commands or create you own new custom command
+    -> For EX: to commit message:
+        -> git config --global alias.ac "commit -am"
+            -> here we are create command 'ac' which will run command 'commit -am'
+            -> git ac <commit_message>
+                -> now this command will stage(add) and commit message

@@ -1,0 +1,9 @@
+=> If you are working on some change that almost work but they can't really be committed yet because they break everything else
+=> In that case git stash will remove the changes from you current working directory and save them for latter use without committing them to the repo
+    -> git stash (to stash the change from cwd )
+    -> git stash pop (when ready to add those changes back into your code)
+
+=> If you use the command a lot you can use:
+    -> git stash save <name_of_that_stash> (to save changes by name to reference it latter)
+    -> git stash list (to get list of all the available stash)
+    -> git stash apply <corresponding_index_of_stash_reference>
