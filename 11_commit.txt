@@ -1,6 +1,8 @@
 -> git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
 -> git commit --amend -m <commit_message> = to change previous commit message
 -> git commit -am <commit_message> = this will automatically stage(add .) and commit the message
+-> git rev-list --count <HEAD,branch> (to get total number of commit)
+-> git rev-list --all --count (to get total number of commit across all branches)
 
 *) Custom Command to commit:
     -> git config --global alias.ac "commit -am"
