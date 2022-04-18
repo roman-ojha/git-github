@@ -1,0 +1,30 @@
+*) Workflows:
+    -> specify the operation that what you want to achieve  
+    -> Workflows are like pipelines
+    -> Codify useful, customized process
+    -> .yaml syntax
+    -> .github/workflows
+    -> Action run in VMs (Linux, Win, Mac)
+        -> Or Docker on Linux VMs
+    -> Log streaming & artifacts
+    -> Secret store with each repository or organization
+
+*) Workflow files glue together existing actions in sequence
+    -> Listen for particular events
+    -> Then run per-existing actions
+    -> Or shell scripts
+
+*) EX:
+    -> build:
+        runs-on :${{ matrix.os }}
+        strategy:
+            matrix:
+                node-version:[8.x, 10.x, 12.x]
+                os: [macos-latest, windows-latest, ubuntu-18.04]
+
+    -> Here build will executed nine times, by it wil build for macos for all 3 node version and windows for all 3 node version and so on
+
+*) Starter Workflows:
+    -> GitHub Provided starter workflows
+    -> Pre configured for specific languages and frameworks 
+    -> Suggested workflows based on languages and framework create you own workflows

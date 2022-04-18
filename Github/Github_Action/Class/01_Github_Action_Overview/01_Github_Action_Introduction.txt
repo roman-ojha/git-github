@@ -7,6 +7,13 @@
     -> Package management
     -> Secrets management
 
+*) Introduction:
+    -> Github action is a platform to automate developer workflow
+    *) What are those workflows?
+        -> add new contributors
+        -> pull requests are created
+    -> https://youtu.be/R8_veQiYBjI?t=155
+
 *) Actions Advantages:
     -> Fully integrated with GitHub
     -> Respond to any GitHub Event
