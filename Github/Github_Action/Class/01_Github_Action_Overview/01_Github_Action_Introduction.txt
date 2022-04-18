@@ -1,7 +1,7 @@
 *) Overview:
     -> GitHub Actions
-    -> Actions & CI
-    -> CD & Release management
+    -> Actions & CI (CI = continuos integration)
+    -> CD & Release management (CD = continuos deployment/continuos delivery)
     -> Self-hosted runners
     -> Build management
     -> Package management
