@@ -1,0 +1,23 @@
+*) Overview:
+    -> GitHub Actions
+    -> Actions & CI
+    -> CD & Release management
+    -> Self-hosted runners
+    -> Build management
+    -> Package management
+    -> Secrets management
+
+*) Actions Advantages:
+    -> Fully integrated with GitHub
+    -> Respond to any GitHub Event
+    -> Community-powered workflows
+    -> any platform, any language, any cloud
+
+*) Key functionalities:
+    -> Automate workflows
+    -> Linux, macOS, Windows, and containers
+    -> Matrix builds
+    -> Streaming, searchable, linkable logs
+    -> Build-in secret store
+    -> Easy to write, easy to share
+
