@@ -14,6 +14,29 @@
     -> Then run per-existing actions
     -> Or shell scripts
 
+*) How GitHub Actions automate these workflow?
+    -> when something happens In or To your repository
+        -> Like some events: PR created, contr.joined, other apps, Issue Created, PR merged
+    -> automatic Actions are executed in response
+    SO,
+        Step 1: Listen to Event:
+            -> PR created, PR merged, other apps, Issue created etc..
+        Step 2: Trigger Workflow
+            -> Workflow: 
+                -> Sort (action)
+                -> Label (action)
+                -> Assign it (action)
+                -> Comment (action)
+
+*) CI/CD with Github Action
+    -> most common workflow for you repository
+    -> Lets Take example:
+        -> given me an environment:
+            -> with Node and Docker available
+            -> with version of specify
+            -> simply connect to a target and deploy
+    
+
 *) EX:
     -> build:
         runs-on :${{ matrix.os }}
