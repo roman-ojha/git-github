@@ -20,4 +20,3 @@
     -> Streaming, searchable, linkable logs
     -> Build-in secret store
     -> Easy to write, easy to share
-
