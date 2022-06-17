@@ -2,8 +2,16 @@
 -> git tag v<version_number> (to create new tag)
 -> git push origin v<same_version_number> (to push given tag to origin)
 -> git show v<version_number> (to see the tag data along wit the commit that wat tagged)
+<<<<<<< HEAD
 -> git tag -d v<version_number>
 
 
 NOTE:
     -> while creating tag it will store the last commit repo
+=======
+
+*) Rename Tag:
+  -> git tag <new_tag_name> <old_tag_name>
+  -> git tag -d old
+  -> git push origin <new_tag_name> : old
+>>>>>>> fcb61b3769e7035fbd4ef90d7220dadbbf437698
