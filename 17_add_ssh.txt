@@ -1,0 +1,10 @@
+-> create new ssh for you pc on 
+    -> https://github.com/settings/keys
+-> generate ssh key in pc using terminal:
+    -> ssh-keygen -t rsa -b 4096 -C "<email>"
+    -> eval $(ssh-agent -s)
+-> add created ssh
+    -> ssh-add ~/.ssh/id_rsa
+-> get ssh value:
+    -> tail ~/.ssh/id_rsa.pub
+-> then past it into github ssh key

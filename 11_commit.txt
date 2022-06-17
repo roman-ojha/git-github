@@ -1,5 +1,6 @@
 -> git commit -m "version 1" = will will commit and in the "" we will make a massage for this commit
 -> git commit --amend -m <commit_message> = to change previous commit message
+-> git push --force origin master (change the commit message name in remote as well)
 -> git commit --amend --date="YYYY-MM-DD HH:MM:SS" (to commit in specific date, NOTE: firstly you have to commit the message)
 -> git commit --amend --date="YYYY-MM-DD HH:MM:SS" --no-edit (to commit in specific date without changing commit message) 
 -> git commit -am <commit_message> = this will automatically stage(add .) and commit the message
@@ -20,3 +21,58 @@
     
     -> NOTE: this will only work if you had not push commit on you remote repository unless:
         -> git push origin master --force (if you want to overwrite the remote commit with the state of you local code BUT not recommended that much)
+
+
+*) Commit Message like pro:
+    *) Commit Formats:
+        -> <type>(<optional scope>): <subject>
+            <optional body>
+            <optional footer>
+            -> <type>: 
+                -> fix : use for bug fixes
+                -> feat : use for code features
+                -> refactor: Commits, that rewrite/restructure your code, however does not change any behaviour
+                    -> perf: Commits are special refactor commits, that improve performance
+                -> style: Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
+                -> test: Commits, that add missing tests or correcting existing tests
+                -> docs: Commits, that affect documentation only
+                -> build: Commits, that affect build components like build tool, ci pipeline, dependencies, project version, ...
+                -> ops: Commits, that affect operational components like infrastructure, deployment, backup, recovery, ...
+                -> chore: Miscellaneous commits e.g. modifying .gitignore
+                -> ci: 
+            -> <optional scope>:
+                -> An additional information
+                -> use nouns
+            -> <subject>:
+                -> short message
+                -> write in the imperative - use add instead of adds or added
+            -> <optional body>:
+                -> free form
+                -> explain change you've made
+            -> <optional footer>:
+                -> word token used
+                -> Examples
+                -> Resolves #10 (to close the issue)
+                -> Development-Method: Pair Programming
+                -> With: <name>
+                -> Report-by: <name> <...@mail.com>
+                -> Signed-off-by: <name> <...@mail.com>
+    *) For Closing Issues:
+        -> fixes: #<issues_number> <commit_message>
+    *) 
+
+
+*) How to add commit <subject>, <optional body>, <optional footer>
+    -> git commit
+        -> inside editor:
+            ->  <write_subject_of_commit>
+
+                <write_body_of_commit>
+
+                <write_footer_of_commit>
+            
+            -> :wq (to write and quit)
+
+            fix(client): fetched post data after root User route to profile page
+
+    -> git commit -m "<type>(<optional_scope>): <subject_of_commit>" -m "<body_of_commit>" -m "<footer_of_commit>"

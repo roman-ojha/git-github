@@ -2,3 +2,8 @@
 -> git tag v<version_number> (to create new tag)
 -> git push origin v<same_version_number> (to push given tag to origin)
 -> git show v<version_number> (to see the tag data along wit the commit that wat tagged)
+-> git tag -d v<version_number>
+
+
+NOTE:
+    -> while creating tag it will store the last commit repo
