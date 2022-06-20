@@ -1,0 +1,29 @@
+*) Submodule:
+    -> Submodule is something like project with in a project like, we will add one repository to another repository
+    -> EX:
+        -> web (repository)
+        -> server (repository)
+            -> README.md
+            -> web (@abc123) (repository reference, hash commit reference)
+
+    -> and after we will create submodule in repository then it will create '.gitmodules' file:
+        ->  [submodule "<Directory>"]
+            path = <Directory>
+            url = <remote_repository_url>
+
+*) Why:
+    -> Sharing Libraries
+
+*) Command:
+    -> git submodule add <url> (to pull repository into current working repository project)
+    -> git submodule add <url> <path> (to add existing repository on project to as submodule)
+
+    -> NOTE: when you are using git command it will default ignore submodule until you tell it to
+        -> EX: if you want to fork or clone the repository git will not close the submodule by default
+        -> git pull --recurse-submodules= (this will recursively go to all the submodule and pull the repository)
+        -> git clone <url> --recurse-submodules= (to clone with recurse submodule)
+        -> git submodule update --init (if you have not clone the repository with recurse submodule, get the submodule and update repository)
+    
+    -> If you have made changes to the submodule repository then we will see that in parent repository as not staged
+    -> if we want to update the command hash/reference of the command hash on the parent repository then we have to commit it on to submodule repository and push it to remote and then commit from parent repository again
+    -> NOTE: until you commit/update the submodule repository you won't be able to stage & commit it into parent repository of that submodule changes
