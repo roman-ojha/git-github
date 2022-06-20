@@ -15,15 +15,23 @@
     -> Sharing Libraries
 
 *) Command:
+    -> git submodule add <url> <relative_path> (to add existing repository on project to as submodule with remote url)
     -> git submodule add <url> (to pull repository into current working repository project)
-    -> git submodule add <url> <path> (to add existing repository on project to as submodule)
+    -> git submodule add <relative_path> (to add existing repository on project as submodule locally)
 
     -> NOTE: when you are using git command it will default ignore submodule until you tell it to
         -> EX: if you want to fork or clone the repository git will not close the submodule by default
         -> git pull --recurse-submodules= (this will recursively go to all the submodule and pull the repository)
-        -> git clone <url> --recurse-submodules= (to clone with recurse submodule)
+        -> git clone --recurse-submodules <url>  (to clone with recurse submodule)
         -> git submodule update --init (if you have not clone the repository with recurse submodule, get the submodule and update repository)
     
     -> If you have made changes to the submodule repository then we will see that in parent repository as not staged
     -> if we want to update the command hash/reference of the command hash on the parent repository then we have to commit it on to submodule repository and push it to remote and then commit from parent repository again
     -> NOTE: until you commit/update the submodule repository you won't be able to stage & commit it into parent repository of that submodule changes
+
+    -> git submodule update (to update the submodule reference commit hash into parent repository from local repository)
+    -> git submodule update --remote (to update submodule into parent repository from remote)
+    
+    *) Remove Submodule: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+        -> git rm <relative_path_of_submodule>
+        -> remote submodule entry in .gitmodules
