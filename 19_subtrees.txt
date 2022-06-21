@@ -1,0 +1,24 @@
+*) Subtree:
+	-> https://www.youtube.com/watch?v=sC1sfoCo5qY
+	*) Add Subtree
+		-> through subtree we can achive the same as submodule
+		-> git subtree add --prefix=<relative_path_of_repository> <url> <branch>
+				-> (to add given repository as subtree in the relative path with the given branch)
+				-> after we run this command git will automatically create the merge commit
+				-> NOTE: git subtree add/brought the full history of subtree repository commit into main parent repository
+				-> so here what we are doing is, adding subtree repository and merging it content into our repo but move under a directory that we specify
+
+		-> but you might not want all the the commit that had been done in subtree repo for that
+
+				-> git subtree add --prefix=<relative_path_of_repository> --squash <url> <branch>
+							-> (this will add given repository in you parent repository but will not fetch all the commit that had been done)
+
+		-> git subtree merge -P <relative_path_of_repository> --squash <commit_hash|tag_hash|ex:d536397>
+				-> (this will point the subtree repo to given commit hash or tag hash and merge it into you subtree repo)
+				-> so it means that if you want you subtree repo to get revert to the older version that you can use this command
+		
+		-> NOTE: in this process of create and mergeing subtree all of that will be handle by git, git will automatically commit you parent repository in the right order
+			-> but in case of submodule we have to handle that in the right order to work otherwise it wouldn't going to work
+
+		-> git subtree split
+		-> git subtree push
