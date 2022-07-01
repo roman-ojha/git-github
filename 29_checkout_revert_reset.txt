@@ -1,0 +1,19 @@
+*) Undo unstaged changes:
+	-> git checkout -- <file> (undo uncommited change for single file)
+	-> git checkout -- . (undo all file in your repo)
+
+*) checkout to previous commit:
+	-> git checkout <commit_id> (to checkout to given commit_id version)
+		
+*) Go to previous commit:
+	-> git revert <commit_id>..HEAD (revert to HEAD commit)
+	-> git revert -n <commit_id>..HEAD (revert to HEAD but with no commit, then commit it)
+			-> git revert --no-commit <commit_id>..HEAD (same)\
+	-> git revert --abort (to abort revert)
+	-> git revert --quit (to quit revert)
+
+		
+*) Undo commit commit:
+	-> git reset --hard <commit_id> (undo commit and delete all commit before given commit id)
+	-> git reset <commit_id> (unstage all the commit that had been done upto given commit)
+		
