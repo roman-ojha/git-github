@@ -31,6 +31,8 @@
 
     -> git submodule update (to update the submodule reference commit hash into parent repository from local repository)
     -> git submodule update --remote (to update submodule into parent repository from remote)
+    -> git config --file .gitmodules --name-only --get-regexp path (list added submodule)
+    -> git submodule--helper list (list added submodule)
     
     *) Remove Submodule: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
         -> git rm <relative_path_of_submodule>
