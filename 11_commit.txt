@@ -7,6 +7,7 @@
 -> git revert HEAD = to revert previous/head commit
 -> git rev-list --count <HEAD,branch> (to get total number of commit)
 -> git rev-list --all --count (to get total number of commit across all branches)
+-> git push <remotename> <commit SHA>:<remotebranchname> (push up-to specific commit)
 
 *) Custom Command to commit:
     -> git config --global alias.ac "commit -am"
