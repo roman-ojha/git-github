@@ -37,3 +37,6 @@
     *) Remove Submodule: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
         -> git rm <relative_path_of_submodule>
         -> remote submodule entry in .gitmodules
+
+    *) Moving Submodule Directory / Changing name of the Submodule folder
+        -> git mv <old_submodule_path> <new_submodule_path>
