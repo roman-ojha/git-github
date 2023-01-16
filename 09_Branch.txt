@@ -22,6 +22,11 @@
 	-> git push origin --delete <remote_branch_name>
 	-> git branch -D <branch_Name> = hard delete
 
+*) List out all the branches:
+	-> git branch -a (list of remote & local branches)
+	-> git branch -r (list of remote branch)
+	-> git branch (list of local branch)
+
 *) Rename Branch to local & remote
 	-> git checkout <old_name>
 	-> git checkout <new_name>

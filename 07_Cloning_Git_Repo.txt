@@ -2,3 +2,8 @@
 	-> first copy the SSH link of the codebase
 	-> git clone <link> = will download the git files from that link
 	-> git clone <link> .b =will downlaod as a reposetory without making a folder
+
+
+	*) Cloning the specific branch
+		-> git clone -b <branch_name> <remote_repo_link>
+		-> git clone -b <branch_name> --single-branch <remote_repo_link> (to only fetch specific branch)
