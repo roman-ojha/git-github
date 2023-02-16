@@ -4,10 +4,13 @@
 -> git commit --amend --date="YYYY-MM-DD HH:MM:SS" (to commit in specific date, NOTE: firstly you have to commit the message)
 -> git commit --amend --date="YYYY-MM-DD HH:MM:SS" --no-edit (to commit in specific date without changing commit message) 
 -> git commit -am <commit_message> = this will automatically stage(add .) and commit the message
--> git revert HEAD = to revert previous/head commit
--> git rev-list --count <HEAD,branch> (to get total number of commit)
--> git rev-list --all --count (to get total number of commit across all branches)
 -> git push <remotename> <commit SHA>:<remotebranchname> (push up-to specific commit)
+
+*) Revert & Reset Commit
+    -> git reset --soft HEAD~1 (undo the last commit)
+    -> git revert HEAD = to revert previous/head commit
+    -> git rev-list --count <HEAD,branch> (to get total number of commit)
+    -> git rev-list --all --count (to get total number of commit across all branches)
 
 *) Custom Command to commit:
     -> git config --global alias.ac "commit -am"
