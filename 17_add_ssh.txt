@@ -7,4 +7,6 @@
     -> ssh-add ~/.ssh/id_rsa
 -> get ssh value:
     -> tail ~/.ssh/id_rsa.pub
+-> copy ssh value:
+    -> clip < ~/.ssh/id_rsa.pub
 -> then past it into github ssh key
