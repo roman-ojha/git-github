@@ -35,8 +35,10 @@
     -> git submodule--helper list (list added submodule)
     
     *) Remove Submodule: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
-        -> git rm <relative_path_of_submodule>
-        -> remote submodule entry in .gitmodules
+        -> git submodule (to check list of submodule)
+        -> git rm <relative_path_of_submodule> (Remove the submodule from Git's directory using the following command)
+        -> git rm --cached <path_to_submodule> (This will remove the submodule from the Git repository and delete its files from the disk. You can also use the --cached option to keep the submodule's files on the disk)
+            -> remove submodule entry from .gitmodules
 
     *) Moving Submodule Directory / Changing name of the Submodule folder
         -> git mv <old_submodule_path> <new_submodule_path>
