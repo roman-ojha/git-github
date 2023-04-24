@@ -14,3 +14,6 @@
 	-> git push origin +<branch_name> --force => to delete the recent remote push in github after reset the commit from the previous command
 		NOTE: while reset all the previous work that you have done will also remove so while doing these thing be aware of that
 	-> git show (to see the changes)
+
+	*> Discard changes:
+		-> git reset --hard HEAD && git clean -fd
