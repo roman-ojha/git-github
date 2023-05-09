@@ -80,3 +80,16 @@
             fix(client): fetched post data after root User route to profile page
 
     -> git commit -m "<type>(<optional_scope>): <subject_of_commit>" -m "<body_of_commit>" -m "<footer_of_commit>"
+    
+*) Recover previously committed changes which get removed upto HEAD->main:
+    -> If you have accidentally removed commits up to the `HEAD` reference on the `main` branch, you can still recover them using Git's reflog and branch operations. Here's a step-by-step guide to recovering the lost commits:
+        1. Verify the status of your Git repository by running `git status`. Make sure you are on the `main` branch and that the commits are truly missing.
+        2. Use the command `git reflog` to view a log of all reference changes, including the lost commits. The reflog will display a history of commit references, allowing you to identify the commit you want to recover.
+        3. Identify the commit hash or reference of the commit you want to recover from the reflog. It might look like `HEAD@{n}` or a specific commit hash.
+        4. Create a new branch at the commit you want to recover by running `git branch recovery-branch <commit-hash>`. Replace `<commit-hash>` with the commit hash or reference you identified in the previous step.
+        5. Switch to the newly created branch by running `git checkout recovery-branch`.
+        6. Verify that the lost commits are now available on the `recovery-branch` by running `git log`.
+        7. If everything looks correct, you can merge the `recovery-branch` back into the `main` branch using `git merge recovery-branch`. Ensure that you are on the `main` branch when executing this command.
+        8. Finally, review the changes on the `main` branch and push them to your remote repository using `git push origin main`.
+
+        By following these steps, you should be able to recover the previously committed changes and bring them back into your `main` branch.
