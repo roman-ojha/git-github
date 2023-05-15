@@ -1,0 +1,8 @@
+*) Go to previous commit(git revert):
+	-> Git revert will not remove the previous commit but rather create the new commit and revert to the specific commit that we want to revert back to
+	-> git revert HEAD (revert the recent commit)
+	-> git revert <commit_id>..HEAD (revert to HEAD commit)
+	-> git revert -n <commit_id>..HEAD (revert to HEAD but with no commit, then commit it)
+			-> git revert --no-commit <commit_id>..HEAD (same)\
+	-> git revert --abort (to abort revert)
+	-> git revert --quit (to quit revert)

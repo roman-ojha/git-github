@@ -2,3 +2,5 @@
     -> git log (to see history/status of commits 'q' or 'z' to exit git log)
     -> git log -5 = only to see the status of <number=5> commit
     -> git log --graph --oneline --decorate (to see more concise commit history breakdown and how different branch connected)
+    -> git log -S "<search_text>" (to see all the commit where we <search_text> get modified)
+    -> git reflog (to see all the history of things that we did )

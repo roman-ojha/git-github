@@ -1,0 +1,6 @@
+*) Undo unstaged changes:
+	-> git checkout -- <file> (undo uncommited change for single file)
+	-> git checkout -- . (undo all file in your repo)
+
+*) checkout to previous commit:
+	-> git checkout <commit_id> (to checkout to given commit_id version)

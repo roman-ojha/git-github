@@ -8,6 +8,8 @@
 		5. prod
 	-> git branch = to see the branch of the repo
 	-> git branch <branch_Name> (git branch -b <branch_Name>) = to make the new branch of the repo
+	-> git branch -v (see list of branch)
+	-> git branch -vv (see list of branch)
 	-> git branch -M main 
 	-> git branch -r (to find name of remote branch)
 	-> git branch - (to go to previously working branch)
@@ -32,3 +34,14 @@
 	-> git checkout <new_name>
 	-> git push origin -u <new_name>
 	-> git push origin --delete <old_name>
+	
+*) Delete local branch deleted branch from remote repo
+	-> git remote update --prune (this will delete the reference to your remote repository, if branch don't exist in you remote repository)
+		-> EX: on 'git branch -vv' we will see:
+			-> <date> 170432 [origin/<date>: gone] <commit_msg>
+			-> here : gone means this branch is gone from the remote repo
+	-> Now Delete the branch that are 'gone'
+		-> git branch -vv | awk '/: gone]/{print $1} | xargs git branch -d
+			-> awk & print (search for the given text & print those branch name)
+			-> This 3 command will find and delete the gone branch
+	-> But you can manually delete all the 'gone' branch as well

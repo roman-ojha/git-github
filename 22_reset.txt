@@ -1,0 +1,5 @@
+*) Undo commit commit(git reset):
+	-> Git reset will reset/delete the previous delete commit from the git log and go back to given commit hash
+	-> git reset --hard <commit_id> (undo commit and delete all commit before given commit id)
+	-> git reset <commit_id> (unstage all the commit that had been done upto given commit)
+    -> git reset --hard origin/main (this will go to remote repository and get the main branch and override with every this that we did locally with the remote commit)

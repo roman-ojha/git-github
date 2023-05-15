@@ -3,8 +3,11 @@
 -> git push --force origin master (change the commit message name in remote as well)
 -> git commit --amend --date="YYYY-MM-DD HH:MM:SS" (to commit in specific date, NOTE: firstly you have to commit the message)
 -> git commit --amend --date="YYYY-MM-DD HH:MM:SS" --no-edit (to commit in specific date without changing commit message) 
--> git commit -am <commit_message> = this will automatically stage(add .) and commit the message
 -> git push <remotename> <commit SHA>:<remotebranchname> (push up-to specific commit)
+
+*) Staged & Commit:
+-> git commit -am <commit_message> = this will automatically stage(add .) and commit the message
+-> git commit -a -m <commit_message> (Staged tracked files & commit the changes)
 
 *) Revert & Reset Commit
     -> git reset --soft HEAD~1 (undo the last commit)
