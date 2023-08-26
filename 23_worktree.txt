@@ -1,0 +1,39 @@
+*) Git WorkTree:
+    -> https://git-scm.com/docs/git-worktree
+    -> It help to checkout and work in multiple git branches simultaneously
+    *) Why to use WorkTree:
+        -> Let's take a scenario where You are working on one branch and you are not still ready to commit the changes yet
+        -> But you have an emergency to checkout to the another branch
+        -> By default git will not allow us to do that
+        -> Because currently working branch have some changes done and you have not still committed yet you can not switch to the another branch.
+        -> in this kind of scenario you can use 'git stash' as well
+        -> But what we want to do is we want to checkout multiple branch at the same time so, git worktree help us to achieve that
+    
+    -> Git WorkTree help you to define multiple directories in you folder system where you can link copies of you branches:
+        -> for now we will link 'main' branch into a directory that is one level above called 'repository' folder
+        -> repository
+                |
+                |- main
+                |
+                |- feature1
+                |
+                |- feature2
+                
+        -> to move between these branches we just have to change directory to that specific folder on our machine and we checkout that branch effectively.
+    
+    -> NOTE that when you try to checkout for the branch that is on a worktree which is actually checkout already in that case we can't do that, so try to remove those branch(worktree) as soon as possible whenever you complete the working on that branch
+    
+    *) Commands:
+        -> git worktree list (get list of branch that is chaining right now)
+        -> git worktree add <relative_path>/<branch_name> (create folder and add branch content, this will add if branch_name exist if branch name doesn't exist then it will create the new branch)
+            -> EX: git worktree add ./feature1
+            -> EX: git worktree add ../project/feature1 (add worktree to the outside of the main project folder)
+            -> git worktree add ./branch/feature2
+                ❯ git worktree list
+                D:/gitworktree                  6b01050 [main]
+                D:/gitworktree/branch/feature2  6b01050 [feature2]
+                D:/gitworktree/feature1         6b01050 [feature1]
+        
+        -> git worktree remove <relative_path>/<branch_name> (to remove worktree)
+        -> git worktree remove <relative_path>/<branch_name> --force (force to remove worktree if there is changes in that branch which have not commit yet and all those change will be gone)
+        -> git worktree move <worktree> <new-path> (change worktree path)
