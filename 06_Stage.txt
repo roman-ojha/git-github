@@ -1,6 +1,7 @@
 => 4 Way to stage the repo
-     	2) git add . (Stages new all files from the current folder)
      	1) git add -A (Stages all files of the whole repositories)
+     	2) git add . (Stages new all files from the current folder)
+			-> git add ../../ (Staged from 2 step back directory)
      	3) git add -u (Stage modified and deleted, without new)
      	4) git add <file_Name> (Stage the file)
           5) git reset (to unstage previous staged)
