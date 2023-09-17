@@ -1,0 +1,2 @@
+-> git restore . (Discard all unstage changes)
+-> git restore <file_path> (Discard specific file changes)
