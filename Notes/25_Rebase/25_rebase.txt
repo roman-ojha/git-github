@@ -1,0 +1,23 @@
+*) Git Rebase:
+  -> in './01_Rebase.png' we have a branch 'feature' and a branch 'master'.
+  -> when I will rebase 'feature' on 'master' then 'feature' will be on top of 'master' branch commit.
+  -> so, it means that git will remove the 'feature' branch commits and then duplicate the 'feature' commits on top of 'master' branch.
+  -> it means that it is rewriting the history.
+  *) Drawback of Rebase:
+    -> rebase doesn't play superwell with the team projects and the pull requests, because it is realy hard to trace.
+    -> when you are working on a team on the same branch and you are rebasing then it will override the commits.
+
+  *) Command:
+    -> git config pull.rebase false (to disable rebase when you are pulling the code, and using merge instead of rebase)
+    -> git pull --rebase origin master (to rebase the code)
+    -> git config pull.rebase true (to enable rebase when you are pulling the code)
+    -> git rebase master (to rebase the code with the master branch)
+    *> Steps to rebase the code with the master branch:
+      -> Example: https://youtu.be/f1wnYdLEpgI?t=196
+      1> git checkout feature (do some change and commit and create a new commit on the feature branch)
+      2> git checkout master
+      3> git pull origin master (to get the latest changes happen to the master brach on the remote)
+      4> git checkout feature
+      5> git rebase master (to rebase the current feature branch with the master branch with the latest changes happend to the master branch)
+      6> git checkout master
+      7> git rebase feature (to finally merge means rebase the feature branch where in feature we have done some changes with the master branch)
