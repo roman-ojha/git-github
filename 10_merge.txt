@@ -1,3 +1,0 @@
--> git merge <branch_name_that_you_want_to_merge_with_the_current_open_branch>
-
--> NOTE: if we will change some file under another branch except main branch then we have to merge that changed branch to the main branch from local of from remote by requesting pull request and then merge and then pull it to local repo
