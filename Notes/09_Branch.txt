@@ -23,6 +23,7 @@
 	-> git branch -d <branch_Name> = to delete the branch from the local system
 	-> git push origin --delete <remote_branch_name>
 	-> git branch -D <branch_Name> = hard delete
+	-> git branch -b <new_branch_name> refs/heads/<another_branch_name> = to create the new branch from the another branch head ref
 
 *) List out all the branches:
 	-> git branch -a (list of remote & local branches)
