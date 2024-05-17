@@ -10,3 +10,14 @@
 -> copy ssh value:
     -> clip < ~/.ssh/id_rsa.pub
 -> then past it into github ssh key
+
+
+*) command:
+    -> ssh-add -l
+        (get list of all added ssh)
+    -> ssh-add -d ~/.ssh/<file_name>
+        (to delete the ssh from added list)
+        
+
+*) Use Multiple git account from the same machine
+    -> https://gist.github.com/alejandro-martin/aabe88cf15871121e076f66b65306610#creating-config-file-for-manage-ssh-keys
